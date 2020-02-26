@@ -1,7 +1,7 @@
 #!/bin/sh
 
-echo "Running pre-commit hook"
-./scripts/run-tests.sh
+echo "running pre-commit hook"
+./scripts/run-scripts.sh
 
 if [ $? -ne 0 ]; then
  echo "Tests must pass before commit!"
